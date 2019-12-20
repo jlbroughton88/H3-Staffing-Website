@@ -1,0 +1,39 @@
+.navMother{
+    height: 60px;
+    .navMain{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .navLeftSide{
+            position: relative;
+            width: 50%;
+            .logoDiv{
+                margin-left: 20px;
+            
+            }
+        };
+        .navRightSide{
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            box-sizing: border-box;
+            .linksDiv{
+                display: flex;
+                justify-content: space-evenly;
+                width: 230px;
+                
+                a{
+                    color: black;
+                    padding: 5px;
+                    transition: all .1s ease-in-out;
+
+                    &:hover{
+                        box-shadow: 0 3px rgba(237, 79, 36, 1),  0 5px  rgba(70, 152, 255, 1)
+                    }
+                }
+            }
+        }
+    };
+};
