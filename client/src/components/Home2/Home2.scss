@@ -1,9 +1,13 @@
+$blue: #4698FF;
+$orange: #ED4F24;
+
 .home2Mother{
     height: auto;
     .home2Main{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 100px;
 
 
         // Discover Head
@@ -11,9 +15,11 @@
             width: 80%;
             max-width: 1000px;
             align-self: center;
-            margin-bottom: 35px;
+            text-align: center;
+            margin-bottom: 15px;
             .discoverHead{
-                color: #4698FF;
+                color: $blue;
+                font-size: 3rem;
                 &:after{
                     content: " H3 Advantage";
                     color: #333;
@@ -41,6 +47,7 @@
         .seekerEmployeeDiv{
             display: flex;
             justify-content: center;
+            margin-bottom: 35px;
 
             .seekerEmployerSlider{
                 border-radius: 5px;
@@ -73,38 +80,245 @@
 
         // Checklist
         .checkListDiv{
-            .checkList{
-                display: grid;
-                grid-template-columns: 33%;
-                grid-template-rows: auto;
+            display: flex;
+            justify-content: center;
+            max-width: 1100px;
+            align-self: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            width: calc(100% - 100px);
+            margin-bottom: 35px;
 
-                :nth-child(1) {
-                    grid-column: 1;
-                }
-                :nth-child(2) {
-                    grid-column: 2;
-                }
-                :nth-child(3) {
-                    grid-column: 3;
-                }
-
-                .checkListItem{
+            .checkListParent{
+                .checkList{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: auto;
                     width: auto;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
+                    
 
-                    .checkListIcon{
-                        width: auto;
+                        :nth-child(1) {
+                            grid-column: 1;
+                        }
+                        :nth-child(2) {
+                            grid-column: 2;
+                        }
+                        :nth-child(3) {
+                            grid-column: 3;
+                        }
+
+                        .checkListItem{
+                            width: auto;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-evenly;
+                            align-items: flex-start;
+                            margin-bottom: 20px;
+                            
+
+                            .checkListIcon{
+                                align-self: center;
+                            }
+                            .checkListPara{
+                                margin: 0;
+                                width: auto;
+                                font-size: 1.5rem;
+                                align-self: center;
+                                max-width: 320px;
+                                margin-left: 10px;
+                            }
                     }
-                    .checkListPara{
-                        margin: 0;
-                        width: auto;
-                        font-size: 1.5rem;
+                }     
+            }
+        }
+
+
+        .coreValuesParent{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1100px;
+            align-self: center;
+
+            .valuesHeadDiv{
+                width: 80%;
+                max-width: 1000px;
+                align-self: center;
+                text-align: center;
+                margin-bottom: 15px;
+
+                .valuesHead{
+                    text-align: center;
+                    color: $blue;
+                    font-size: 3rem;
+                }
+            }
+
+            .valuesContent{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                .valuesListDiv{
+                    .valuesList{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(3, auto);
+                        justify-content: flex-start;
+
+                        .valueItem{
+                            border: #333 solid 2px;
+                            margin: 10px;
+                            padding: 10px 15px;
+                            border-radius: 5px;
+                            box-shadow: 2px 2px $orange, 4px 4px $blue;
+                        }
+                    }
+                }            
+                
+                .valuesParaDiv{
+                width: 500px;
+                    .valuesPara{
+                        font-size: 1.4rem;
+                    }
+            }
+            }
+
+
+
+        }
+        
+        @media(max-width: 950px) {
+            // Discover Head
+            .discoverHeadDiv{
+                align-self: center;
+                    .discoverHead{}
+            }
+
+            .seekerEmployeeDiv{
+                .seekerEmployerSlider{
+                    .seekerSlide{}
+                    .employerSlide{}
+                }
+            }
+
+            .checkListDiv{
+                .checkListParent{
+                    display: flex;
+                    justify-content: center;
+                    width: 80%;
+
+                    .checkList{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+
+                        .checkListItemParent{                        
+                            align-self: flex-start;
+                            display: inline-block;
+                
+
+                            .checkListItem{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+
+                                .checkListPara{
+                                max-width: inherit;
+                                font-size: 1.6rem;
+                                padding-left: 20px;
+                            } 
+                            }
+
+                        }
+                    }
+                }
+            }
+            .coreValuesParent{
+                width: calc(100% - 100px);
+                padding-left: 50px;
+                padding-right: 50px;
+                .valuesContent{
+                    .valuesParaDiv{
+                        .valuesPara{
+                            font-size: 1.25rem;
+                        }
+                    }
+                    .valuesListDiv{
+                        .valuesList{
+                            .valueItem{
+                              padding: 6px 8px;  
+                            }
+                        }
                     }
                 }
             }
         }
 
+        @media(max-width: 780px) {
+            .discoverHeadDiv{
+                .discoverHead{
+                   font-size: 2.4rem; 
+                }
+            }
+
+            .checkListDiv{
+                .checkListParent{
+                    width: auto;
+                    .checkList{
+                        width: auto;
+                        .checkListItemParent{
+                            .checkListItem{
+                                .iconDiv{
+                                    height: 45px;
+                                    // min-width: 40px;
+                                   .checkListIcon{
+                                  
+                                    }   
+                                }
+
+                            
+                            .checkListPara{
+                                    font-size: 1.2rem;
+                                    padding-left: 20px;
+                                }   
+                            }
+                        }
+                    }
+                }
+            }
+
+            .coreValuesParent{
+                margin-bottom: 100px;
+                .valuesHeadDiv{
+                    .valuesHead{
+                        font-size: 2.5rem;
+                    }
+            }
+                .valuesContent{
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: auto auto;
+                    .valuesParaDiv{
+                        grid-row: 2;
+                        width: auto;
+                        .valuesPara{
+                            font-size: 1.1rem;
+                            
+                        }
+                    }
+                    .valuesListDiv{
+                        grid-row: 1;
+                        margin-bottom: 25px;
+                        .valuesList{
+                            .valueItem{
+                                margin: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
