@@ -3,23 +3,178 @@ $orange: #ED4F24;
 
 .home3Mother{
     .home3Main{
+        display: flex;
         padding-left: 50px;
         padding-right: 50px;
         width: calc(100% - 100px);
+        justify-content: center;
         .overviewSectParent{
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
             .overviewSect{
                 .overviewHead{
                     font-size: 2.5rem;
                     color: $blue;
+                    margin: 0;
                 };
                 .overviewParaDiv{
-                    width: 500px;
-                                    .overviewPara{
-                    font-size: 1.25rem;
+                    width: auto;
+                    margin-bottom: 60px;
+                    padding-right: 40px;
+                    .overviewPara{
+                        font-size: 1.25rem;
+                    };
                 };
+                .briefSect{
+                    .briefDiv{
+                        box-shadow: -3px 0px 0px 0px $orange, -6px 0px 0px 0px $blue;
+                        margin-bottom: 30px;
+                        padding-left: 10px;
+                        .briefHead{
+                            margin: 0;
+                            font-size: 1.4rem;
+                        };
+                        .briefPara{
+                            margin: 0;
+                            font-size: 1.25rem;
+                        };
+                    };
+                };
+            };
+            .overviewImgSect{
+                max-width: 300px;
+                width: 100%;
+                .overviewImg{
+                    height: auto;
+                    width: 100%;
+                    border-radius: 5px;
+                    box-shadow: 4px 4px $orange, 8px 8px $blue;
+                    
+
+                };
+            };
+
+            
+            @media(min-width: 701px) {
+                .overviewSect{
+                    .overviewImgSect2{
+                        display: none;
+                        .overviewImg2{
+
+                        }
+                    }
+                }
+            }
+
+            @media(max-width: 700px) {
+                flex-direction: column;
+                .overviewSect{
+                    .overviewHead{
+                        margin-bottom: 25px;
+                        text-align: center;
+                    }
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: auto auto;
+                    .overviewParaDiv{
+                        display: none;
+                        .overviewPara{
+                            
+                        }
+                    }
+                    .briefSect{
+                        .briefDiv{
+                            // box-shadow: none;
+                            padding-right: 10%;
+                            .briefHead{
+                                font-size: 1.3rem;
+                            }
+                            .briefPara{
+                                font-size: 1.1rem;
+                            };
+                        }
+                    }
+
+
+                }
+                                   
+                .overviewSect2{
+                    grid-row: 1;
+
+                    }
+                .overviewImgSect2{
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    max-width: inherit;
+                    box-shadow: 4px 4px $orange, 8px 8px $blue;
+                    border-radius: 5px;
+                    margin-bottom: 25px;
+
+                        .overviewParaDiv2{
+                            position: absolute;
+                            z-index: 2;
+                            color: white;
+                            padding-right: 10%;
+                            padding-left: 4%;
+                            
+                                .overviewPara2{
+                                    display: inline-block;
+                                    font-size: 1.5rem;
+                                    margin: 0;
+                                    font-weight: 500;
+                                }
+                        } 
+
+                    .overviewImg2{
+                        filter: brightness(55%);
+                        box-shadow: none;                        
+                        height: auto;
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+                .overviewImgSect{
+                    display: none;                
+                        .overviewImg{
+                        display: none;
+                    }
                 }
 
             }
-        }
-    }
-}
+
+            @media(max-width: 550px) {
+                .overviewSect{
+                    .overviewHead{
+                        font-size: 2.4rem;
+                    }
+                    .overviewImgSect2{
+                        .overviewParaDiv2{
+                            .overviewPara2{
+                                font-size: 1.25rem;
+                            }
+                        }
+                    }
+
+                    .briefSect{
+                        .briefDiv{
+                            .briefHead{
+                                font-size: 1.15rem;
+                            };
+                            .briefPara{
+                                font-size: 1rem;
+                            };
+                        }
+                    }
+
+                }
+            }
+        };
+    };
+};
