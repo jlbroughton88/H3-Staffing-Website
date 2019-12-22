@@ -1,0 +1,25 @@
+$blue: #4698FF;
+$orange: #ED4F24;
+
+.home3Mother{
+    .home3Main{
+        padding-left: 50px;
+        padding-right: 50px;
+        width: calc(100% - 100px);
+        .overviewSectParent{
+            .overviewSect{
+                .overviewHead{
+                    font-size: 2.5rem;
+                    color: $blue;
+                };
+                .overviewParaDiv{
+                    width: 500px;
+                                    .overviewPara{
+                    font-size: 1.25rem;
+                };
+                }
+
+            }
+        }
+    }
+}
