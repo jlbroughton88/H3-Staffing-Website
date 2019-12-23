@@ -1,41 +1,4 @@
 
-// .home1Mother{
-//     height: 100vh;
-
-//     .home1Main{
-      
-//       .home1HeadDiv{}
-//       .home1CTADiv{
-//         button{
-//           -webkit-appearance: none;
-//           border: none;
-//           background: #ED4F24;
-//           border-radius: 5px;
-//           box-shadow: 3px 3px rgba(70, 152, 255, 1);
-//           color: #ffffff;
-//           font-size: 1.2rem;
-//           font-weight: 900;
-//           padding: 0 15px;
-          
-
-//           @keyframes press {
-//             from { transform: translate(0px); }
-//             to { transform:
-//               translate(2px),
-//               translate-y()
-//             }
-//           }
-
-//           &:hover{
-//             animation: press 1s alternate;
-//           }
-//         }
-//       }
-//     }
-// }
-
-
-
 
 
 .home1Mother{
@@ -49,6 +12,7 @@
     align-items: center;
     .home1HeadDiv{
       padding: 0 40px;
+      margin-bottom: 30px;
       h2{
         color: #4698FF;
         font-size: 2rem;
@@ -62,7 +26,11 @@
         &:after{
           content: " Job Seeker, we're here to help.";
           color: #333;
-      }
+        }
+
+        @media(max-width: 700px) {
+          font-size: 1.8rem;
+        }
       }
     }
     .home1CTADiv{
@@ -81,16 +49,6 @@
         padding: 0 15px;
         transition: all .2s ease-in-out;
 
-        // @keyframes press {
-        //   from { transform: translate(0px); transform: translate-y(0px);}
-        //   to { transform: translate(2px); transform: translate-y(2px); }
-        // }
-
-        // &:focus {
-        //   outline: none;
-        //   box-shadow: 1px 1px rgba(70, 152, 255, 1);
-        //   animation: press .2s infinite;
-        // }
       }
     }
   .downArrow{

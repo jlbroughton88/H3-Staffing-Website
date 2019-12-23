@@ -2,12 +2,21 @@ $blue: #4698FF;
 $orange: #ED4F24;
 
 .home3Mother{
+    margin-bottom: 100px;
     .home3Main{
         display: flex;
         padding-left: 50px;
         padding-right: 50px;
         width: calc(100% - 100px);
         justify-content: center;
+        flex-direction: column;                
+        
+        .overviewHead{
+                    font-size: 2.5rem;
+                    color: $blue;
+                    margin: 0;
+                    margin-bottom: 35px;
+                };
         .overviewSectParent{
             max-width: 1100px;
             width: 100%;
@@ -16,17 +25,16 @@ $orange: #ED4F24;
             justify-content: space-evenly;
 
             .overviewSect{
-                .overviewHead{
-                    font-size: 2.5rem;
-                    color: $blue;
-                    margin: 0;
-                };
+
                 .overviewParaDiv{
                     width: auto;
                     margin-bottom: 60px;
                     padding-right: 40px;
+                    margin: none;
+                    
                     .overviewPara{
                         font-size: 1.25rem;
+                        margin: none;
                     };
                 };
                 .briefSect{
@@ -176,5 +184,52 @@ $orange: #ED4F24;
                 }
             }
         };
+
+        @media(min-width: 826px) {
+            .overViewSectParent{
+                .overviewSect{
+                    .briefSect{
+                        display: inline-block;
+                    }
+                }
+            }
+            .briefSect2{
+                display: none;
+            };
+        }
+        @media(max-width: 825px) {
+            .overviewSectParent{
+                .overviewSect{
+                    .briefSect{
+                        display: none;
+                        .briefDiv{
+                            width: 100%;
+                        }
+                    }
+                }
+
+    
+            }
+            .overviewImgSect{
+                    max-height: 320px;
+                }
+
+           .briefSect2{
+                .briefDiv2{
+                    box-shadow: -3px 0px 0px 0px $orange, -6px 0px 0px 0px $blue;
+                    margin-bottom: 30px;
+                    padding-left: 10px;
+                    .briefHead2{
+                        margin: 0;
+                        font-size: 1.4rem;
+                    };
+                    .briefPara2{
+                        margin: 0;
+                        font-size: 1.25rem;
+                    };
+                };
+            };
+        }
     };
 };
+

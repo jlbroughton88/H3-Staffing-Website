@@ -6,9 +6,11 @@ const Home3 = () => {
     return (
         <div className="home3Mother">
             <div className="home3Main">
+                <h2 className="overviewHead">A Brief Overview of H3 Staffing</h2>
                 <div className="overviewSectParent">
+                    
                     <div className="overviewSect">
-                        <h2 className="overviewHead">A Brief Overview of H3 Staffing</h2>
+                        
 
                         <div className="overviewImgSect2">
                        <div className="overviewParaDiv2">
@@ -20,7 +22,7 @@ const Home3 = () => {
                                     that matter and the right recruiting team who’s got your back.
                                 </p>
                             </div>
-                            <img className="overviewImg2" src={Img1}></img>
+                            <img className="overviewImg2" src={Img1} alt="Women sitting with computers"></img>
                         </div>
 
 
@@ -54,9 +56,25 @@ const Home3 = () => {
                         </div>           
                     </div>                        
                     <div className="overviewImgSect">
-                        <img className="overviewImg" src={Img1}></img>
+                        <img className="overviewImg" src={Img1} alt="Women sitting with computers"></img>
                     </div>
                 </div>
+                <div className="briefSect2">
+                    <div className="briefDiv2">
+                        <h3 className="briefHead2">We Provide Consistent, Professional, Quality Service</h3>
+                        <p className="briefPara2">We do whatever it takes to build client and consultant loyalty.</p>
+                    </div>
+
+                    <div className="briefDiv2">
+                        <h3 className="briefHead2">We Take Care Of Our People</h3>
+                        <p className="briefPara2">We understand that our success is because of our people.</p>
+                    </div>
+
+                    <div className="briefDiv2">
+                        <h3 className="briefHead2">We Work Together</h3>
+                        <p className="briefPara2">By working as a synchronized, organized team; we are able to provide a better, more professional service than anyone else.</p>
+                    </div>
+                </div>    
             </div>
         </div>
     )
