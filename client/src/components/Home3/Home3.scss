@@ -2,7 +2,7 @@ $blue: #4698FF;
 $orange: #ED4F24;
 
 .home3Mother{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     .home3Main{
         display: flex;
         padding-left: 50px;
@@ -10,18 +10,24 @@ $orange: #ED4F24;
         width: calc(100% - 100px);
         justify-content: center;
         flex-direction: column;                
-        
-        .overviewHead{
-                    font-size: 2.5rem;
-                    color: $blue;
-                    margin: 0;
-                    margin-bottom: 35px;
-                };
+        .overviewHeadDiv{
+            max-width: 1100px;
+            align-self: center;
+            width: 100%;
+            .overviewHead{
+                font-size: 2.5rem;
+                color: $blue;
+                margin: 0;
+                margin-bottom: 35px;
+            };
+        }
+
         .overviewSectParent{
             max-width: 1100px;
             width: 100%;
             display: flex;
             flex-direction: row;
+            align-self: center;
             justify-content: space-evenly;
 
             .overviewSect{

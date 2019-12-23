@@ -6,7 +6,10 @@ const Home3 = () => {
     return (
         <div className="home3Mother">
             <div className="home3Main">
-                <h2 className="overviewHead">A Brief Overview of H3 Staffing</h2>
+                <div className="overviewHeadDiv">
+                    <h2 className="overviewHead">A Brief Overview of H3 Staffing</h2>
+                </div>
+                
                 <div className="overviewSectParent">
                     
                     <div className="overviewSect">
@@ -72,7 +75,7 @@ const Home3 = () => {
 
                     <div className="briefDiv2">
                         <h3 className="briefHead2">We Work Together</h3>
-                        <p className="briefPara2">By working as a synchronized, organized team; we are able to provide a better, more professional service than anyone else.</p>
+                        <p className="briefPara2">By working as a synchronized, organized team; we are able to provide a better, more  professional service than anyone else.</p>
                     </div>
                 </div>    
             </div>

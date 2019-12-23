@@ -12,7 +12,7 @@ const Home4 = () => {
                     <div className="servicesGrid">
                         <div className="serviceDiv">
                             <h3 className="serviceHead">Permanent Placements</h3>
-                            <p className="servicePara">Looking for that long term answer to be an integral part of your  business?</p>
+                            <p className="servicePara">Looking for that long term answer  to be an integral part of your  business?</p>
                         </div>
                         <div className="serviceDiv">
                             <h3 className="serviceHead">Contract Services</h3>

@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, p{
         .servicesGridDiv{
             width: 100%;
             margin-bottom: 40px;
+            max-width: 1450px;
             .servicesGrid{
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -31,9 +32,10 @@ h1, h2, h3, h4, h5, p{
                         margin: 0;
                         margin-bottom: 10px;
                         font-size: 1.25rem;
+                        font-size: 1.5rem;
                     };
                     .servicePara{
-                        font-size: 1.1rem;
+                        font-size: 1.4rem;
                     };
                 }
             }
@@ -42,6 +44,7 @@ h1, h2, h3, h4, h5, p{
             background-color: #4698FF;
             width: calc(100% + 100px);
             padding: 15px 0;
+            margin-bottom: 150px;
             .letsTalkHeadDiv{
                 
                 .letsTalkHead{
