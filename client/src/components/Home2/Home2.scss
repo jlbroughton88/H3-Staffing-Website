@@ -30,7 +30,7 @@ $orange: #ED4F24;
 
         // Seeker / Employer
         @mixin slideAttr{
-            border: none;
+            outline: none;
             width: 100px;
             border: 2px solid lightgrey;
             font-size: 1rem;
@@ -60,6 +60,11 @@ $orange: #ED4F24;
                     border-bottom-left-radius: 5px;
                     @include slideAttr();
 
+                    &:hover{
+                        cursor: pointer;
+                        // @include slideFocus();
+                    }
+
                     &:focus{
                         @include slideFocus();
                     }
@@ -68,6 +73,11 @@ $orange: #ED4F24;
                     border-top-right-radius: 5px;
                     border-bottom-right-radius: 5px;
                     @include slideAttr();
+
+                    &:hover{
+                        cursor: pointer;
+                        // @include slideFocus();
+                    }
 
                     &:focus{
                         @include slideFocus();
