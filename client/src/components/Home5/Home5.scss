@@ -19,10 +19,11 @@ $orange: #ED4F24;
             flex-direction: row;
             width: calc(100% - 60px);
             padding: 30px;
-            padding-top: 0;
+            // padding-top: 0;
             overflow: hidden;
             .testimonialBoxParent{
-                margin-right: 200px;
+                margin-right: 200px; 
+                position: relative;
                 .testimonialBox{
                     width: 400px;
                     background: #EEEFF2;
@@ -30,10 +31,22 @@ $orange: #ED4F24;
                     padding: 20px;
                     border-radius: 10px;
                     box-shadow: 4px 4px $orange, 8px 8px $blue;
+                    z-index: 1;
+
                         .testimonialPara{
                             font-size: 1.3rem;
                         }                 
-                    }                    
+                    }            
+
+                svg{
+                    position: absolute;
+                    margin-right: 10px;
+                    z-index: 2;
+                    
+                    text{
+                        
+                    }
+                }                 
                 
 
                 .testimonialRoleDiv{
