@@ -1,0 +1,60 @@
+$blue: #4698FF;
+$orange: #ED4F24;
+
+.home5Mother{
+    .home5Main{
+        margin-bottom: 100px;
+        .home5HeadDiv{
+            width: 100%;
+            margin-bottom: 35px;
+
+            .home5Head{
+                color: $blue;
+                text-align: center;
+                font-size: 2.5rem;
+            }
+        }
+        .scrollingDiv{
+            display: flex;
+            flex-direction: row;
+            width: calc(100% - 60px);
+            padding: 30px;
+            padding-top: 0;
+            overflow: hidden;
+            .testimonialBoxParent{
+                margin-right: 200px;
+                .testimonialBox{
+                    width: 400px;
+                    background: #EEEFF2;
+                    margin-bottom: 30px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px $orange, 8px 8px $blue;
+                        .testimonialPara{
+                            font-size: 1.3rem;
+                        }                 
+                    }                    
+                
+
+                .testimonialRoleDiv{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    .testimonialRole{
+                        text-align: center;
+                        font-size: 1.4rem;
+                    }
+                }                    
+                
+                @keyframes scroll {
+                    from{ transform: translate(0)}
+                    to{transform: translate(-2000px)}
+                }
+                        
+                 animation: scroll 50s alternate infinite;
+            }
+
+        }
+    }
+}
