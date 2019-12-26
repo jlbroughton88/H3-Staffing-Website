@@ -19,7 +19,7 @@ const Home3 = () => {
                        <div className="overviewParaDiv2">
                                 <p className="overviewPara2">At H3 Staffing we work hard to understand your complex staffing needs and work
                                     efficiently to find the perfect marriage between employer and employee. <br/><br/>  Having
-                                    a combined total of 10 years of Staffing experience, our mission is to build
+                                    a combined total of <strong>10 years</strong> of Staffing experience, our mission is to build
                                     meaningful relationships. It’s what we’re about. <br/><br/> We’ve got connections that
                                     count, experience that makes all the difference, deep working relationships
                                     that matter and the right recruiting team who’s got your back.
@@ -35,7 +35,7 @@ const Home3 = () => {
                         <div className="overviewParaDiv">
                             <p className="overviewPara">At H3 Staffing we work hard to understand your complex staffing needs and work
                                 efficiently to find the perfect marriage between employer and employee. <br/><br/>  Having
-                                a combined total of 10 years of Staffing experience, our mission is to build
+                                a combined total of <strong>10 years</strong> of Staffing experience, our mission is to build
                                 meaningful relationships. It’s what we’re about. <br/><br/> We’ve got connections that
                                 count, experience that makes all the difference, deep working relationships
                                 that matter and the right recruiting team who’s got your back.

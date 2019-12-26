@@ -3,6 +3,7 @@ h1, h2, h3, h4, h5, p{
     width: inherit;
 }
 
+
 .home4Mother{
     .home4Main{
         display: flex;
@@ -36,6 +37,10 @@ h1, h2, h3, h4, h5, p{
                     };
                     .servicePara{
                         font-size: 1.4rem;
+
+                        @media(max-width: 800px) {
+                            font-size: 1.3rem;
+                        }
                     };
                 }
             }
@@ -54,7 +59,7 @@ h1, h2, h3, h4, h5, p{
             }
         }
 
-        @media(max-width: 650px) {
+        @media(max-width: 700px) {
             .servicesGridDiv{
                 .servicesGrid{
                     grid-template-columns: 100%;

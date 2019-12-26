@@ -17,10 +17,12 @@
         color: #4698FF;
         font-size: 2rem;
         font-weight: 500;
+        
 
         &:before{
           content: "Employer ";
           color: #333;
+          
         }
 
         &:after{
@@ -31,6 +33,13 @@
         @media(max-width: 700px) {
           font-size: 1.8rem;
         }
+
+        @keyframes brighten{
+          from{ filter: brightness(100%) }
+          to{ filter: brightness(140%) }
+        }
+        
+        animation: brighten 1.5s alternate infinite; 
       }
     }
     .home1CTADiv{

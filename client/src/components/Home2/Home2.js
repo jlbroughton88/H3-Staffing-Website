@@ -5,6 +5,7 @@ import CheckMark from "../icons/checkMark.js";
 
 const Home2 = () => {
     const [currentSlide, setSlide] = useState("seeker");
+
     let currentArr = [];
 
     const seekerEmployerArray = {
@@ -20,30 +21,28 @@ const Home2 = () => {
                 "Employer sample phrase 3"
             ]
     }
+    
+    const clickedStyle = (btn) => {
+        btn.style.boxShadow = ("inset 2px 2px 2px rgba(51, 51, 51, 0.4)");
+        btn.style.outline = "none";
+        btn.style.border = "2px solid #4897fb";
+        btn.style.color = "#2E5E9B";
+        btn.style.fontSize = ".95rem";
+    }
+
+    const resetStyle = (btn) => {
+        btn.style.boxShadow = "none";
+        btn.style.outline = "none";
+        btn.style.border = "2px lightgrey solid";
+        btn.style.color = "#333";
+        btn.style.fontSize = "1rem";
+    }
 
     const handleSlideClick = (e) => {
        let slide = e.target.className;
        let clickedBtn = document.getElementsByClassName(slide);
-        let buttons = document.getElementsByClassName("slideBtn");
+        let buttons = document.getElementsByClassName("slideBtn");    
         
-
-       
-       const clickedStyle = (btn) => {
-            btn.style.boxShadow = ("inset 2px 2px 2px rgba(51, 51, 51, 0.4)");
-            btn.style.outline = "none";
-            btn.style.border = "2px solid #4897fb";
-            btn.style.color = "#2E5E9B";
-            btn.style.fontSize = ".95rem";
-       }
-
-       const resetStyle = (btn) => {
-            btn.style.boxShadow = "none";
-            btn.style.outline = "none";
-            btn.style.border = "2px lightgrey solid";
-            btn.style.color = "#333";
-            btn.style.fontSize = "1rem";
-        }
-
         for(let i = 0; i < buttons.length; i++) {
             console.log(clickedBtn[0])
             if(clickedBtn[0].className.includes("seekerSlide")) {
@@ -81,8 +80,8 @@ const Home2 = () => {
 
                     <div className="seekerEmployeeDiv">
                         <div className="seekerEmployerSlider">
-                            <button onClick={handleSlideClick} id="current" className="slideBtn seekerSlide">Job Seeker</button>
-                            <button onClick={handleSlideClick} id="" className="slideBtn employerSlide">Employer</button>
+                            <button onClick={handleSlideClick} id="seekerBtn" className="slideBtn seekerSlide">Job Seeker</button>
+                            <button onClick={handleSlideClick} className="slideBtn employerSlide">Employer</button>
                         </div>
                     </div>
 
@@ -117,7 +116,7 @@ const Home2 = () => {
                                     Our clients and candidates are our only concern. They are why we exist. 
                                     Everything we do is to help our clients find superior talent and our candidates
                                     realize their career ambitions.   <br/><br/>Our job at H3 is very simple: to build lasting
-                                    relationships with everyone we meet, to listen deeply, and to honestly care.
+                                    relationships with everyone we meet, to listen deeply, and to <strong>honestly care</strong>.
                                 </div>
                             </div>
 
