@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": " node server.js",
     "server": "nodemon server.js",
-    "client" : "PORT=3001 npm start --prefix client",
+    "client": "PORT=3001 npm start --prefix client",
     "dev": "concurrently \"npm run client\" \"npm run server\" "
   },
   "repository": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/jlbroughton88/H3-Staffing-Website#readme",
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.6.0",
+    "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "concurrently": "^5.0.2",
     "cors": "^2.8.5",
