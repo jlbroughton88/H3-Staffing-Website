@@ -29,10 +29,26 @@ export class Auth0Provider extends Component {
         this.initializeAuth0()
     };
 
+    // getRandomInt(min, max) {
+    //     min = Math.ceil(min);
+    //     max= Math.floor(max);
+    //     return Math.floor(Math.random() * (max - min)) + min;
+    // }
+
+    // addUser = (newUser, randomNum) => {
+    //     if ( newUser.given_name ) {}
+    //     else if () {}
+    // }
+
+    // findUser = (newUser) => {
+    //     this.setState({ isLoading: true })
+    // }
+
     findUserAgain = () => {
         const user = this.state.user;
         if(user) {
             console.log(user)
+            this.setState({ isLoading: false });
         } else {
             console.log("no user, cant do it")
             this.setState({ isLoading: false });

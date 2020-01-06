@@ -1,1 +1,2 @@
-Figure out why .env variables on context are not being read
+Integrate user database
+Add queries for the database and functions onto context page

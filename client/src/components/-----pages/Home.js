@@ -6,10 +6,19 @@ import Home3 from "../Home3/Home3";
 import Home4Half from "../Home4Half/Home4Half";
 import Home5 from "../Home5/Home5";
 import Home6 from "../Home6/Home6";
+import { useAuth0 } from "../../contexts/auth-context";
 
 const Home = () => {
+
+    const { isLoading } = useAuth0();
+
+    if(isLoading) {
+        return <div>Loading...</div>
+    }
+
     return (
         <div>
+    
             <Navbar/>
             <Home1/>
             <Home2/>
