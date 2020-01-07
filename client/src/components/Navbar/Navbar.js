@@ -17,12 +17,12 @@ const Navbar = () => {
                 </section>
                 <section className="rightNav">
                     <div className="loginLogoutSect">
-                        {!isLoading && !user && (
+                        {/* {!isLoading && !user && ( */}
                             <div className="loggedOutSect">
                                 <button className="navLogIn" onClick={loginWithRedirect}>Log In</button>
                             </div>
-                        )}
-                        {!isLoading && user && (
+                        {/* )} */}
+                        {user && (
                             <div className="loggedInSect">
                                 {/* <h2 className="navGreeting">Hello, {user.given_name ? user.given_name : user.nickname}!</h2> */}
                                 <button className="navLogOut" onClick={logout}> Log Out</button>
