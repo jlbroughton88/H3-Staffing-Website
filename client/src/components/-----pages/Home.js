@@ -12,13 +12,12 @@ const Home = () => {
 
     const { isLoading } = useAuth0();
 
-    // if(isLoading) {
-    //     return <div>Loading...</div>
-    // }
+    if(isLoading) {
+        return <div>Loading...</div>
+    }
 
     return (
         <div>
-            <Navbar/>
             <Home1/>
             <Home2/>
             <Home3/>

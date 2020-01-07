@@ -39,7 +39,7 @@ exports.ADD_USER = (req, res) => {
 
 exports.ADD_NAME = (req, res) => {
    console.log("adding name from controller")
-   connection.query(`UPDATE users SET first_name="${req.params.first}", last_name="${req.params.last}" WHERE email = "${req.params.email}"`, 
+   connection.query(`UPDATE users SET given_name="${req.params.given_name}", family_name="${req.params.family_name}" WHERE email = "${req.params.email}"`, 
       (err, rows, fields) => {
          if (err) throw err; 
       }

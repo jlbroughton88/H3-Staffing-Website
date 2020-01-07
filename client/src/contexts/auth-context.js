@@ -76,7 +76,7 @@ export class Auth0Provider extends Component {
         if (user) {
             axios
                 .get(`http://localhost:5003/api/finduser/${user.email}`)
-                .then(response => console.log(response))
+                .then(response => this.setState({ dbUser: response.data, isLoading: false }))
                 .catch(err => console.log(err))
         } else {
             console.log("no user, cant do it")
