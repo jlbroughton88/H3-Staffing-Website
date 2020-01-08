@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {useAuth0} from "./contexts/auth-context";
 import Home from "./components/-----pages/Home";
 import Profile from "./components/-----pages/Profile";
+import Jobs from "./components/-----pages/Jobs";
 import Navbar from "./components/Navbar/Navbar";
 import { Helmet } from "react-helmet";
 
@@ -21,6 +22,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/profile" component={Profile}></Route>
+          <Route exact path="/jobs" component={Jobs}></Route>
         </Switch>
         <Helmet>
           <meta charSet="utf-8"/>

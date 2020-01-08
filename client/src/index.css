@@ -7,7 +7,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body{
+  font-family:"Open Sans";
+  font-weight: 500;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family:"Open Sans";
+  src: url("./assets/fonts/open-sans/OpenSans-Regular.ttf") format("TrueType");
+}
+
+@font-face {
+  font-family:"Open Sans Semibold";
+  src: url("./assets/fonts/open-sans/OpenSans-Semibold.ttf") format("TrueType");
 }

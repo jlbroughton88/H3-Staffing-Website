@@ -5,6 +5,7 @@ const Profile = () => {
     return (
         <div>
             <Profile1/>
+            
         </div>
     )
 }
