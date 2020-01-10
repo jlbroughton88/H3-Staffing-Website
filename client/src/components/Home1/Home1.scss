@@ -97,165 +97,165 @@
 
 
 
-/* OVERRIDES !important must be included on all styles */
+// /* OVERRIDES !important must be included on all styles */
 
-/* container for all pages */
-/* main text color default is set here - IMPORTANT */
-/* can change background, or add borders and padding */
-.jb--jobs {
-    color: #000 !important;
-    /* background: #fff !important; */
-    padding: 1rem !important;
-  }
+// /* container for all pages */
+// /* main text color default is set here - IMPORTANT */
+// /* can change background, or add borders and padding */
+// .jb--jobs {
+//     color: #000 !important;
+//     /* background: #fff !important; */
+//     padding: 1rem !important;
+//   }
   
-  /* page titles */
-  .jb--wrapper h2 {
-    color: #333 !important;
-  }
+//   /* page titles */
+//   .jb--wrapper h2 {
+//     color: #333 !important;
+//   }
   
-  /* links */
-  .jb--wrapper a {
+//   /* links */
+//   .jb--wrapper a {
   
-  }
+//   }
   
-  /* search and apply buttons, pagination */
-  /* can change background, or add borders, change border-radius and padding */
-  .jb--button {
-    background-color: #D3D3D3 !important;
-    border: 1px solid #000 !important;
-    color: #000 !important;
-    border-radius: 6px;
-  }
-  .jb--button:hover {
-    background-color: #f5f5f5 !important;
-    border: 1px solid #000 !important;
-    color: #808080 !important;
-  }
-  /* button with arrow when they are at the beginning or end */
-  .jb--button.disabled {
-    background-color: #eaeaea !important;
-    border: 1px solid #cecece !important;
-    color: #cecece !important;
-  }
-  /* button active depending which page of the search results */
-  .jb--button-active {
-    background-color: #a9a9a9 !important;
-    border: 1px solid #000 !important;
-    color: #fff !important;
-  }
-  .jb--wrapper input {
-    border-radius: 6px !important;
-  }
-  /* height of buttons and form fields */
-  .jb--wrapper input, button, .jb--button {
-      height: 36px !important;
-  }
+//   /* search and apply buttons, pagination */
+//   /* can change background, or add borders, change border-radius and padding */
+//   .jb--button {
+//     background-color: #D3D3D3 !important;
+//     border: 1px solid #000 !important;
+//     color: #000 !important;
+//     border-radius: 6px;
+//   }
+//   .jb--button:hover {
+//     background-color: #f5f5f5 !important;
+//     border: 1px solid #000 !important;
+//     color: #808080 !important;
+//   }
+//   /* button with arrow when they are at the beginning or end */
+//   .jb--button.disabled {
+//     background-color: #eaeaea !important;
+//     border: 1px solid #cecece !important;
+//     color: #cecece !important;
+//   }
+//   /* button active depending which page of the search results */
+//   .jb--button-active {
+//     background-color: #a9a9a9 !important;
+//     border: 1px solid #000 !important;
+//     color: #fff !important;
+//   }
+//   .jb--wrapper input {
+//     border-radius: 6px !important;
+//   }
+//   /* height of buttons and form fields */
+//   .jb--wrapper input, button, .jb--button {
+//       height: 36px !important;
+//   }
   
-  /* Change the color of the placeholder text in inputs */
-  ::-webkit-input-placeholder {
-    color: #808080;
-  }
-  :-ms-input-placeholder {
-    color: #808080;
-  }
-  ::-moz-placeholder {
-    color: #808080;
-  }
-  :-moz-placeholder {
-    color: #808080;
-  }
+//   /* Change the color of the placeholder text in inputs */
+//   ::-webkit-input-placeholder {
+//     color: #808080;
+//   }
+//   :-ms-input-placeholder {
+//     color: #808080;
+//   }
+//   ::-moz-placeholder {
+//     color: #808080;
+//   }
+//   :-moz-placeholder {
+//     color: #808080;
+//   }
   
-  /* Changes the loading indicator */
-  .jb--loading {
-    color: #D3D3D3;
-    width: 100px;
-  }
+//   /* Changes the loading indicator */
+//   .jb--loading {
+//     color: #D3D3D3;
+//     width: 100px;
+//   }
   
-  /* container that holds search description */
-  /* can change background, or add borders and padding */
-  .jb--job-listing {
-    background: #fff !important;
-    padding: 1rem !important;
-  }
-  .jb--job-listing:hover {
-    background: #f7f7f7 !important;
-  }
+//   /* container that holds search description */
+//   /* can change background, or add borders and padding */
+//   .jb--job-listing {
+//     background: #fff !important;
+//     padding: 1rem !important;
+//   }
+//   .jb--job-listing:hover {
+//     background: #f7f7f7 !important;
+//   }
   
-  /* container that holds search description for featured jobs */
-  /* can change background, or add borders and padding */
-  .jb--job-listing-featured {
-    background: #fff !important;
-    padding: 1rem !important;
-  }
-  .jb--job-listing-featured:hover {
-    background: #f7f7f7 !important;
-  }
+//   /* container that holds search description for featured jobs */
+//   /* can change background, or add borders and padding */
+//   .jb--job-listing-featured {
+//     background: #fff !important;
+//     padding: 1rem !important;
+//   }
+//   .jb--job-listing-featured:hover {
+//     background: #f7f7f7 !important;
+//   }
   
-  /* featured job label on search results */
-  .jb--wrapper .jb--featured-label {
-    background: #555555;
-  }
+//   /* featured job label on search results */
+//   .jb--wrapper .jb--featured-label {
+//     background: #555555;
+//   }
   
-  /* job title on search results */
-  /* should pick up <a> color, can change if necessary */
-  .jb--title a {
+//   /* job title on search results */
+//   /* should pick up <a> color, can change if necessary */
+//   .jb--title a {
   
-  }
+//   }
   
-  /* location on search results */
-  .jb--location {
-    color: #808080 !important;
-  }
+//   /* location on search results */
+//   .jb--location {
+//     color: #808080 !important;
+//   }
   
-  /* date posted on search results */
-  .jb--date-posted {
-    color: #000 !important;
-  }
+//   /* date posted on search results */
+//   .jb--date-posted {
+//     color: #000 !important;
+//   }
   
-  /* job descriptions on search results */
-  .jb--description {
-    color: #808080 !important;
-  }
+//   /* job descriptions on search results */
+//   .jb--description {
+//     color: #808080 !important;
+//   }
   
-  /* job count on bottom of search results */
-  .jb--job-count {
-    color: #000 !important;
-  }
+//   /* job count on bottom of search results */
+//   .jb--job-count {
+//     color: #000 !important;
+//   }
   
-  /* container for the sidebar on job detail page */
-  /* can add background, border, padding */
-  .jb--sidebar {
+//   /* container for the sidebar on job detail page */
+//   /* can add background, border, padding */
+//   .jb--sidebar {
   
-  }
+//   }
   
-  /* titles in sidebar */
-  .jb--sidebar-title {
-    color: #808080 !important;
-  }
+//   /* titles in sidebar */
+//   .jb--sidebar-title {
+//     color: #808080 !important;
+//   }
   
-  /* content in sidebar */
-  .jb--sidebar-content {
-    color: #000 !important;
-  }
+//   /* content in sidebar */
+//   .jb--sidebar-content {
+//     color: #000 !important;
+//   }
   
-  /* container for job description on job detail page */
-  /* can add background, border, padding */
-  .jb--content {
+//   /* container for job description on job detail page */
+//   /* can add background, border, padding */
+//   .jb--content {
   
-  }
+//   }
   
-  /* applying for at top of apply page */
-  .jb--applying-for {
-    color: #333 !important;
-  }
+//   /* applying for at top of apply page */
+//   .jb--applying-for {
+//     color: #333 !important;
+//   }
   
-  /* labels on form field on apply page */
-  .jb--label {
-    color: #808080 !important;
-  }
+//   /* labels on form field on apply page */
+//   .jb--label {
+//     color: #808080 !important;
+//   }
   
-  /* accepted file types below resume picker */
-  .jb--file-type {
-    color: #666 !important;
-  }
+//   /* accepted file types below resume picker */
+//   .jb--file-type {
+//     color: #666 !important;
+//   }
   
