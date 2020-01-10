@@ -6,20 +6,11 @@ import loadjs from "loadjs";
 
 const Jobs1 = () => {
 
-    const [mounted, setMounted] = useState(false);
-    const [loading, setLoading] = useState(false);
-
     useEffect(() => {
         loadjs(['https://bb3jobboard.topechelon.com/job_board.js'])
-         setLoading(true)
-        console.log(mounted)
-         localStorage.setItem("mounted-state", JSON.stringify(mounted))
+        //  localStorage.setItem("mounted-state", JSON.stringify(mounted))
 
     }, []);
-
-    console.log(loading)
-
-
 
     const handleClick = () => {
         window.location.reload(true);

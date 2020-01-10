@@ -6,6 +6,7 @@ import Home from "./components/-----pages/Home";
 import Profile from "./components/-----pages/Profile";
 import Jobs from "./components/-----pages/Jobs";
 import Navbar from "./components/Navbar/Navbar";
+import AppRouter from "./components/Router/Router";
 import { Helmet } from "react-helmet";
 
 function App() {
@@ -29,11 +30,12 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Switch>
+        <AppRouter/>
+        {/* <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/profile" component={Profile}></Route>
           <Route exact path="/jobs" component={Jobs}></Route>
-        </Switch>
+        </Switch> */}
         <Helmet>
           <meta charSet="utf-8" />
           <title>H3 Staffing</title>
