@@ -71,6 +71,7 @@
     color: #000 !important;
     border-radius: 6px;
     margin-top: 10px;
+    cursor: pointer !important;
   }
   .jb--button:hover {
     background-color: #f5f5f5 !important;
@@ -95,7 +96,10 @@
   /* height of buttons and form fields */
   .jb--wrapper input, button, .jb--button {
       height: 36px !important;
-    //   margin: 10px 0;
+  }
+
+  .nameSubmit{
+      cursor: pointer;
   }
 
   /* Change the color of the placeholder text in inputs */

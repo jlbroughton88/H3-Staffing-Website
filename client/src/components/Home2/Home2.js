@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {useState} from "react";
 import "./Home2.scss";
 import CheckMark from "../icons/checkMark.js";
 
 const Home2 = () => {
     const [currentSlide, setSlide] = useState("seeker");
+    const seekerBtn = document.getElementById("seekerBtn")
+    let buttons = document.getElementsByClassName("slideBtn");   
+
+    useEffect(() => {
+        console.log(buttons[0])
+        if(buttons[0].style.color !== "rgb(46, 94, 155)") {
+           clickedStyle(buttons[0]) 
+        }
+    })
 
     let currentArr = [];
 
@@ -41,10 +50,9 @@ const Home2 = () => {
     const handleSlideClick = (e) => {
        let slide = e.target.className;
        let clickedBtn = document.getElementsByClassName(slide);
-        let buttons = document.getElementsByClassName("slideBtn");    
+         
         
         for(let i = 0; i < buttons.length; i++) {
-            console.log(clickedBtn[0])
             if(clickedBtn[0].className.includes("seekerSlide")) {
                 clickedStyle(buttons[0]);
                 resetStyle(buttons[1])

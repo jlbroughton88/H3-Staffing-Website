@@ -48,7 +48,7 @@ exports.ADD_NAME = (req, res) => {
 
 exports.ADD_BLOG_POST = (req, res) => {
    const r = req.body;
-   connection.query(`INSERT INTO blog_posts (uid, user_uid, author, blog_text, date_created, time_created) VALUES ("${r.uid}", "${r.user_uid}", "${r.author}", "${r.blog_text}", "${r.date_created}", "${r.time_created}")`, 
+   connection.query(`INSERT INTO blog_posts (uid, user_uid, author, title, blog_text, date_created, time_created) VALUES ("${r.uid}", "${r.user_uid}", "${r.author}", "${r.title}", "${r.blog_text}", "${r.date_created}", "${r.time_created}")`, 
       (err, rows, fields) => {
          if(err) throw err;
          console.log("THIS IS COMING FROM CONTROLLER...")
