@@ -50,8 +50,8 @@ const BlogPost1 = () => {
             <div className="blogPostMain">
                 <h1 className="blogPostHead">Create a Blog Post!</h1>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" className="blogPostTitle" value={blogTitle} onChange={e => setBlogTitle(e.target.value)}/>
-                    <textarea type="text" className="blogPostInput" value={blogInput} onChange={e => setBlogInput(e.target.value)}/>
+                    <input type="text" placeholder="Enter an engaging title..." className="blogPostTitle" value={blogTitle} onChange={e => setBlogTitle(e.target.value)}/>
+                    <textarea type="text" placeholder="Let your job seekers know what H3 has going on..." className="blogPostInput" value={blogInput} onChange={e => setBlogInput(e.target.value)}/>
                     <button type="submit" className="blogPostBtn">Post</button>
                 </form>
                 
