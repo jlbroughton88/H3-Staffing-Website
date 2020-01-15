@@ -26,7 +26,7 @@ const BlogPost1 = () => {
         const formattedUid = uid.toString();
         const user_uid = dbUser.uid.toString();
         let time = moment().format('LT');
-        let date = moment().format('MMMM Do YYYY');
+        let date = moment().format('L');
         let formattedTime = time.replace(/\s/g, "");
         let formattedDate = date.replace(/\//g, "-");
 
