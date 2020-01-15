@@ -65,3 +65,12 @@ exports.GET_BLOG_POSTS = (req, res) => {
       }
    )
 }
+
+exports.GET_SELECTED_POST = (req, res) => {
+   connection.query(`SELECT * FROM blog_posts WHERE uid = "${req.params.uid}"`, 
+      (err, rows, fields) => {
+         if(err) throw err;
+         res.send(rows[0])
+      }
+   )
+}

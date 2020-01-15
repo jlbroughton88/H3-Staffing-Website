@@ -4,6 +4,7 @@ import Home from "../-----pages/Home";
 import Profile from "../-----pages/Profile";
 import Jobs from "../-----pages/Jobs";
 import BlogPost from "../-----pages/BlogPost";
+import SinglePost from "../-----pages/SinglePost";
 import { useAuth0 } from "../../contexts/auth-context";
 
 const AppRouter = () => (
@@ -11,6 +12,7 @@ const AppRouter = () => (
         <Route exact path="/" component={Home}></Route>
         <Route path="/profile" component={Profile}></Route>
         <Route path="/jobs" component={Jobs}></Route>
+        <Route path="/blog/:uid" component={SinglePost} />
         <PrivateRoute path="/blogpost" component={BlogPost} />
     </Switch>
 )

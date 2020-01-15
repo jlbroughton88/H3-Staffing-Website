@@ -8,12 +8,11 @@ const Home2 = () => {
     const seekerBtn = document.getElementById("seekerBtn")
     let buttons = document.getElementsByClassName("slideBtn");   
 
-    useEffect(() => {
-        console.log(buttons[0])
-        if(buttons[0].style.color !== "rgb(46, 94, 155)") {
-           clickedStyle(buttons[0]) 
-        }
-    })
+    // useEffect(() => {
+    //     if(buttons[0].style.color !== "rgb(46, 94, 155)") {
+    //        clickedStyle(buttons[0]) 
+    //     }
+    // })
 
     let currentArr = [];
 
