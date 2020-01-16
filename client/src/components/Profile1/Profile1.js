@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./Profile1.scss";
 
 const Profile1 = () => {
-    const { isLoading, user, dbUser} = useAuth0();
+    const { isLoading, user, dbUser, statusUrl} = useAuth0();
     const [first, setFirst] = useState("");
     const [last, setLast] = useState("");
 
@@ -17,7 +17,7 @@ const Profile1 = () => {
     const addName = () => {
         console.log(first + " " + last + " " + dbUser.email)
         axios
-            .get(`http://localhost:5003/api/addname/${first}/${last}/${user.email}`, { timeout: 200 })
+            .get(`${statusUrl}/api/addname/${first}/${last}/${user.email}`, { timeout: 200 })
             .then(response => console.log(response))
             .catch(err => console.log(err));
         console.log(`Name changed to: ${first} ${last}`)

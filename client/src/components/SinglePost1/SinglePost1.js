@@ -4,13 +4,13 @@ import "./SinglePost1.scss";
 
 const SinglePost1 = () => {
 
-    const [post, setPost] = useState({});
+    const [post, setPost, statusUrl] = useState({});
 
     useEffect(() => {
         const postUid = window.location.pathname.replace("/blog/", "");
 
         axios
-            .get(`http://localhost:5003/api/blogpost/get/${postUid}`)
+            .get(`${statusUrl}/api/blogpost/get/${postUid}`)
             .then(response => setPost(response.data))
             .catch(err => console.log(err))
     }, [])

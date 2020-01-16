@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "../../contexts/auth-context";
 import "./Home6.scss"
 
 const Home6 = () => {
 
-    const [blogPosts, setBlogPosts] = useState([])
+    const [blogPosts, setBlogPosts] = useState([]);
+    const { statusUrl } = useAuth0();
 
 
     const getBlogs = () => {
         axios
-            .get(`http://localhost:5003/api/blogpost/get`)
+            .get(`${statusUrl}/api/blogpost/get`)
             .then(response => setBlogPosts([...response.data.reverse()]))
             .catch(err => console.log(err))
     }

@@ -7,7 +7,7 @@ import "./BlogPost1.scss";
 const BlogPost1 = () => {
     const [blogTitle, setBlogTitle] = useState("")
     const [blogInput, setBlogInput] = useState("");
-    const { user, dbUser } = useAuth0();
+    const { user, dbUser, statusUrl } = useAuth0();
 
     useEffect(() => {
 
@@ -31,7 +31,7 @@ const BlogPost1 = () => {
         let formattedDate = date.replace(/\//g, "-");
 
         axios
-            .post(`http://localhost:5003/api/blogpost/post`, {
+            .post(`${statusUrl}/api/blogpost/post`, {
                 uid : formattedUid,
                 user_uid: user_uid,
                 author: "null",
