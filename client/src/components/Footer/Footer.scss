@@ -67,6 +67,13 @@ hr{
                         color: #ffffff;
                     }
                 }
+    
+                @media(max-width: 800px) {
+                    grid-template-columns: 90%;
+                    justify-items: start;
+                    row-gap: 40px;
+                    padding-bottom: 0;
+                }
             }
             .legalDiv{
                 display: flex;
