@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
-hr{
+.blogsHr{
     border: 1px solid $blue;
     width: 80%;
     margin: 0;
@@ -41,7 +41,7 @@ hr{
             max-width: 1200px;
             justify-content: center;
             justify-items: center;
-            align-items: center;
+            align-items: start;;
             grid-gap: 30px;
             
             .blogPost{

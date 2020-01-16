@@ -1,0 +1,24 @@
+$blue: #4698FF;
+$orange: #ED4F24;
+
+.letsTalkMother{
+    .letsTalkMain{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .letsTalkBar{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: $blue;
+            .letsTalkHead{
+                text-align: center;
+                font-size: 4rem;
+                color: #ffffff;
+            }
+        }
+    }
+}   

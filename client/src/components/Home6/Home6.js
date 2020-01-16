@@ -35,7 +35,7 @@ const Home6 = () => {
                                     <p className="blogTime">{post.time_created}</p>
                                     <p className="blogDate">{post.date_created}</p>
                                 </div>
-                                <hr />
+                                <hr className="blogsHr" />
                                 {post.blog_text.length > 150 ?
                                     <p className="blogText">{post.blog_text.slice(0, 150)}...</p>
                                     :

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./SinglePost1.scss";
 
 const SinglePost1 = () => {
 
@@ -13,14 +14,24 @@ const SinglePost1 = () => {
             .then(response => setPost(response.data))
             .catch(err => console.log(err))
     }, [])
-    
+
 
     return (
-        <div>
-<h1>{post.title}</h1>
-    <p>{post.blog_text}</p>
-<p>{post.date_created}</p>
-    <p>{post.time_created}</p>
+        <div className="singleMother">
+            <div className="singleMain">
+                <div className="singlePostContainer">
+                    <h1 className="singleTitle">{post.title}</h1>
+                    <p className="singleText">{post.blog_text}</p>
+                    <hr className="singleHr" />
+                    <div className="dateTimeSingle">
+                        <p className="singleTime">{post.time_created}</p>
+                        <p className="singleDate">{post.date_created}</p>
+                        
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     )
 }

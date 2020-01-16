@@ -1,0 +1,84 @@
+$blue: #4698FF;
+$orange: #ED4F24;
+
+hr{
+    width: 95%;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.footerMother{
+    .footerMain{
+        .footerBar{
+            background: #333;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .footerLinks{
+                width: 100%;
+                max-width: 1450px;
+                display: grid;
+                grid-template-columns: 25% 25% 50%;
+                justify-content: center;
+                justify-items: center;
+                padding: 40px 0;
+                .companyArea{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    color: #ffffff;
+                    .companyHead{
+                        font-size: 1.9rem;
+                        margin-bottom: 5px;
+                    }
+                    .companyPara{
+                        font-size: 1.3rem;
+                    }
+                }
+                .careersArea{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    color: #ffffff;
+                    .careersHead{
+                        font-size: 1.9rem;
+                        margin-bottom: 5px;
+                    }
+                    .careersPara{
+                        font-size: 1.3rem;
+                    }
+                }
+                .connectArea{
+                    color: $orange;
+                    .connectHead{
+                        font-size: 1.9rem;
+                        margin-bottom: 5px;
+                    }
+                    .connectPara{
+                        color: #ffffff;
+                        font-size: 1.3rem;
+                    }
+
+                    .socialsArea{
+                        display: flex;
+                        flex-direction: row;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .legalDiv{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                .legalPara{
+                    color: #ffffff;
+                    text-align: center;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

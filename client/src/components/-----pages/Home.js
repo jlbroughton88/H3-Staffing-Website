@@ -6,6 +6,8 @@ import Home3 from "../Home3/Home3";
 import Home4Half from "../Home4Half/Home4Half";
 import Home5 from "../Home5/Home5";
 import Home6 from "../Home6/Home6";
+import LetsTalk1 from "../LetsTalk1/LetsTalk1";
+import Footer from "../Footer/Footer";
 import { useAuth0 } from "../../contexts/auth-context";
 
 const Home = () => {
@@ -24,6 +26,8 @@ const Home = () => {
             <Home4Half/>
             <Home5/>
             <Home6/>
+            <LetsTalk1/>
+            <Footer/>
         </div>
     )
 }

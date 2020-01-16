@@ -1,0 +1,68 @@
+$blue: #4698FF;
+$orange: #ED4F24;
+
+.singleHr{
+    border: 1px $blue solid;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.singleMother{
+    height: calc(100vh - 100px);
+    .singleMain{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .singlePostContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;;
+            .singleTitle{
+                margin-bottom: 25px;
+                align-self: flex-start; 
+                background: #333;
+                color: #ffffff;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 4px 4px $orange, 8px 8px $blue;
+            }
+            .singleText{
+                margin-bottom: 20px;
+                
+            }
+            .dateTimeSingle{
+                display: flex;
+                flex-direction: row;
+                align-self: flex-end;
+                background: lightblue;
+                padding: 15px;
+                border-radius: 5px;
+                .singleDate{               
+                    &:before{
+                        color: $blue;
+                        content: "\00a0  ||| \00a0";
+                    }}
+                .singleTime{} 
+            }
+        }
+
+        @media(min-width: 1400px) {
+            .singlePostContainer{
+                max-width: 1000px;
+                .singleTitle{
+                    font-size: 2.5rem;
+                }
+                .singleText{
+                    font-size: 1.2rem;
+                    white-space: pre-wrap;
+                }
+            }
+
+
+        }
+    }
+}
