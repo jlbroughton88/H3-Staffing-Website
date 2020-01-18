@@ -11,6 +11,7 @@ const Home6 = () => {
 
 
     const getBlogs = () => {
+        console.log(statusUrl)
         axios
             .get(`${statusUrl}/api/blogpost/get`)
             .then(response => setBlogPosts([...response.data.reverse()]))
@@ -43,10 +44,8 @@ const Home6 = () => {
                                     :
                                     <p className="blogText">{post.blog_text}</p>
                                 }
-
                             </div>
                         </Link>
-
                     )}
                 </div>
 

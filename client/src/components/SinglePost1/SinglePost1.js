@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./SinglePost1.scss";
+import { useAuth0 } from "../../contexts/auth-context";
+
 
 const SinglePost1 = () => {
 
-    const [post, setPost, statusUrl] = useState({});
+    const [post, setPost] = useState({});
+    const { statusUrl } = useAuth0();
 
     useEffect(() => {
         const postUid = window.location.pathname.replace("/blog/", "");
-
+        console.log(statusUrl)
         axios
             .get(`${statusUrl}/api/blogpost/get/${postUid}`)
             .then(response => setPost(response.data))
@@ -19,6 +22,7 @@ const SinglePost1 = () => {
     return (
         <div className="singleMother">
             <div className="singleMain">
+                
                 <div className="singlePostContainer">
                     <h1 className="singleTitle">{post.title}</h1>
                     <p className="singleText">{post.blog_text}</p>
