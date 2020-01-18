@@ -1,13 +1,6 @@
 const mysql = require("mysql");
 require("dotenv").config();
-
-const connection = mysql.createConnection({
-   host: 'localhost',
-   user: process.env.DB_USER,
-   password: process.env.DB_PASS,
-   database: 'h3_staffing_db',
-   port: '8889',
-});
+const connection = mysql.createConnection(process.end.JAWSDB_URL);
 connection.connect()
 
 exports.test_route = (req, res) => {
