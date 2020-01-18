@@ -9,7 +9,7 @@ const Home1 = () => {
 
             <div className="home1Main">
                 <div className="home1HeadDiv">
-                    <h2>or</h2>
+                    <h2 className="home1Head">or</h2>
                 </div>
                 <div className="home1CTADiv">
                     <Link to="/jobs/#!/search?page=1">

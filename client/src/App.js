@@ -6,6 +6,7 @@ import Home from "./components/-----pages/Home";
 import Profile from "./components/-----pages/Profile";
 import Jobs from "./components/-----pages/Jobs";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 import AppRouter from "./components/Router/Router";
 import { Helmet } from "react-helmet";
 
@@ -41,6 +42,7 @@ function App() {
           <title>H3 Staffing</title>
           {/* <script src="https://bb3jobboard.topechelon.com/job_board.js" type="text/javascript"></script> */}
         </Helmet>
+        <Footer/>
       </div>
     </Router>
   );

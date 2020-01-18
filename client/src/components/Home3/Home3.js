@@ -11,10 +11,7 @@ const Home3 = () => {
                 </div>
                 
                 <div className="overviewSectParent">
-                    
                     <div className="overviewSect">
-                        
-
                         <div className="overviewImgSect2">
                        <div className="overviewParaDiv2">
                                 <p className="overviewPara2">At H3 Staffing we work hard to understand your complex staffing needs and work
@@ -27,9 +24,6 @@ const Home3 = () => {
                             </div>
                             <img className="overviewImg2" src={Img1} alt="Women sitting with computers"></img>
                         </div>
-
-
-
 
 
                         <div className="overviewParaDiv">

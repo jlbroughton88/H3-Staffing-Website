@@ -88,4 +88,42 @@ hr{
             }
         }
     }
+
+    @media(max-width: 600px) {
+        .footerMain{
+            .footerBar{
+                .footerLinks{
+                    .companyArea{
+                        .companyHead{
+                            font-size: 1.5rem;
+                        }
+                        .companyPara{
+                            font-size: 1.1rem;
+                        }
+                    }
+                    .careersArea{
+                        .careersHead{
+                            font-size: 1.5rem;
+                        }
+                        .careersPara{
+                            font-size: 1.1rem;
+                        }
+                    }
+                    .connectArea{
+                        .connectHead{
+                            font-size: 1.5rem;
+                        }
+                        .connectPara{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+                .legalDiv{
+                    .legalPara{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
 }

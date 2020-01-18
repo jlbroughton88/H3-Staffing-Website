@@ -71,4 +71,30 @@ $orange: #ED4F24;
 
         }
     }
+
+    @media(max-width: 600px) {
+        .home5Main{
+            .home5HeadDiv{
+                .home5Head{
+                    font-size: 2.2rem;
+                }
+            }
+
+            .scrollingDiv{
+                .testimonialBoxParent{
+                    .testimonialBox{
+                        width: 350px;
+                        .testimonialPara{
+                            font-size: 1.1rem;
+                        }
+                    }
+                    .testimonialRoleDiv{
+                        .testimonialRole{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
