@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: grey;
+    background: #ffffff;
     .home1HeadDiv{
       padding: 0 40px;
       margin-bottom: 30px;
@@ -65,22 +65,27 @@
         cursor: pointer;
       }
     }
-    .downArrow{
-      position: absolute;
-      display: inline-block;
-      align-self: center;
-      width: 25px;
-      top: 90%;
-      height: 35px;
-      fill: #383838;
-      animation: upDown 1s alternate infinite;
+    .arrowDiv{
+      display: flex;
+      justify-content: center;
+      .downArrow{
+        position: absolute;
+        display: inline-block;
+        align-self: center;
+        width: 25px;
+        top: 90%;
+        height: 35px;
+        fill: #383838;
+        animation: upDown 1s alternate infinite;
 
-      @keyframes upDown{
-          from {transform: translateY(0)}
-          to{ transform: translateY(15px) };
-      }    
-  
+        @keyframes upDown{
+            from {transform: translateY(0)}
+            to{ transform: translateY(15px) };
+        }    
+    
+      }
     }
+
   }
 
   @media(max-width: 600px) {
