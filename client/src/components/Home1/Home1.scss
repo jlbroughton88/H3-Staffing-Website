@@ -1,8 +1,5 @@
-
-
-
 .home1Mother{
-  height: calc(100vh - 120px);
+  height: calc(100vh - 204px);
 
   .home1Main{
     height: 100%;
@@ -89,6 +86,7 @@
   }
 
   @media(max-width: 600px) {
+    height: calc(100vh - 250px);
     .home1Main{
       .home1HeadDiv{
         .home1Head{

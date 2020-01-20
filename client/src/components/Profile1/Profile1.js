@@ -26,7 +26,7 @@ const Profile1 = () => {
     return (
         <div className="profile1Mother">
             <div className="profile1Main">
-                    <h1>{dbUser.given_name !== "null" ? dbUser.given_name : dbUser.nickname}'s Profile</h1>
+                    <h1 className="profileName" >{dbUser.given_name !== "null" ? dbUser.given_name : dbUser.nickname}'s Profile</h1>
                     {dbUser.given_name === "null" && dbUser.family_name === "null" && (
                         <form onSubmit={handleSubmit} value="Submit">
                             <input className="nameInputs" placeholder="first name" type="text" value={first} name="firstname" onChange={e => setFirst(e.target.value)} />

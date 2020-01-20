@@ -8,7 +8,8 @@ strong{
 
 
 .home3Mother{
-    margin-bottom: 150px;
+    margin-top: 100px;
+    // margin-bottom: 150px;
     .home3Main{
         display: flex;
         padding-left: 50px;
@@ -245,7 +246,18 @@ strong{
     };
 
     @media(max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .home3Main{
+            width:calc(100% - 70px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 35px;
+
             .overviewHeadDiv{
                 .overviewHead{
                     font-size: 2.2rem;
