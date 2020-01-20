@@ -6,7 +6,7 @@ const LetsTalk1 = () => {
         <div className="letsTalkMother">
             <div className="letsTalkMain">
                 <div className="letsTalkBar">
-                    <h1 className="letsTalkHead">Lets Talk</h1>
+                    <a href="mailto:h3staffing@gmail.com?Subject=Website%20Inquiry"><h1 className="letsTalkHead">Lets Talk</h1></a>
                 </div>
             </div>
         </div>

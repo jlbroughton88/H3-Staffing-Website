@@ -1,39 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "../../contexts/auth-context";
-import "./Home6.scss"
+import "./AllPosts1.scss";
 
-const Home6 = () => {
+const AllPosts1 = () => {
 
-    const [blogPosts, setBlogPosts] = useState([]);
     const { statusUrl } = useAuth0();
-
-
-    const getBlogs = () => {
-        console.log(statusUrl)
-        axios
-            .get(`${statusUrl}/api/blogpost/get`)
-            .then(response => setBlogPosts([...response.data.reverse()]))
-            .catch(err => console.log(err))
-    }
-
+    const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        getBlogs();
+        axios
+            .get(`${statusUrl}/api/blogpost/get`)
+            .then(response => setPosts([...response.data]))
+            .catch(err => console.log(err))
     }, [])
 
-
-
     return (
-        <div className="blogMother">
-            <div className="blogMain">
-                <h1 className="blogHead">H3 Blog</h1>
-                <Link to="/blog/all" >
-                   <button className="blogViewAllBtn">View All</button> 
-                    </Link>
-                <div className="postGrid">
-                    {blogPosts.splice(0, 3).map(post =>
+        <div className="allMother">
+            <h1 className="allHead">All Posts</h1>
+            <div className="postGrid">
+                    {posts.reverse().map(post =>
                         <Link key={post.uid} to={`/blog/${post.uid}`}>
                             <div key={post.uid} className="blogPost">
                                 <h3 className="blogTitle">{post.title}</h3>
@@ -51,11 +38,8 @@ const Home6 = () => {
                         </Link>
                     )}
                 </div>
-
-            </div>
-
         </div>
     )
 }
 
-export default Home6;
+export default AllPosts1;
