@@ -5,15 +5,6 @@ import CheckMark from "../icons/checkMark.js";
 
 const Home2 = () => {
     const [currentSlide, setSlide] = useState("seeker");
-    const seekerBtn = document.getElementById("seekerBtn")
-    let buttons = document.getElementsByClassName("slideBtn");   
-
-    // useEffect(() => {
-    //     if(buttons[0].style.color !== "rgb(46, 94, 155)") {
-    //        clickedStyle(buttons[0]) 
-    //     }
-    // })
-
     let currentArr = [];
 
     const seekerEmployerArray = {
@@ -29,48 +20,31 @@ const Home2 = () => {
                 "Employer sample phrase 3"
             ]
     }
-    
-    const clickedStyle = (btn) => {
-        btn.style.boxShadow = ("inset 2px 2px 2px rgba(51, 51, 51, 0.4)");
-        btn.style.outline = "none";
-        btn.style.border = "2px solid #4897fb";
-        btn.style.color = "#2E5E9B";
-        btn.style.fontSize = ".95rem";
+
+    useEffect(() => {
+        let seekerSlide = document.getElementById("seekerBtn");
+        seekerSlide.classList.add("active");
+    }, [])
+
+
+    const handleSeekerClick = () => {
+        let seekerSlide = document.getElementById("seekerBtn");
+        let employerSlide = document.getElementById("employerBtn");
+
+        setSlide("seeker");
+        employerSlide.classList.remove("active")
+        seekerSlide.classList.add("active");
     }
 
-    const resetStyle = (btn) => {
-        btn.style.boxShadow = "none";
-        btn.style.outline = "none";
-        btn.style.border = "2px lightgrey solid";
-        btn.style.color = "#333";
-        btn.style.fontSize = "1rem";
+    const handleEmployerClick = () => {
+        let seekerSlide = document.getElementById("seekerBtn")
+        let employerSlide = document.getElementById("employerBtn");
+
+        setSlide("employer")
+        seekerSlide.classList.remove("active")
+        employerSlide.classList.add("active");
     }
 
-    const handleSlideClick = (e) => {
-       let slide = e.target.className;
-       let clickedBtn = document.getElementsByClassName(slide);
-         
-        
-        for(let i = 0; i < buttons.length; i++) {
-            if(clickedBtn[0].className.includes("seekerSlide")) {
-                clickedStyle(buttons[0]);
-                resetStyle(buttons[1])
-            } else if (clickedBtn[0].className.includes("employerSlide")) {
-                clickedStyle(buttons[1]);
-                resetStyle(buttons[0])
-            }
-        };
-
-        if(slide.includes("seekerSlide") ){
-            setSlide("seeker")
-            return currentSlide
-        } else if( slide.includes("employerSlide")) {
-            setSlide("employer")
-            return currentSlide;
-        }           
-        
-
-    }
 
     if(currentSlide === "seeker") {
         currentArr = seekerEmployerArray.seeker;
@@ -87,8 +61,8 @@ const Home2 = () => {
 
                     <div className="seekerEmployeeDiv">
                         <div className="seekerEmployerSlider">
-                            <button onClick={handleSlideClick} id="seekerBtn" className="slideBtn seekerSlide">Job Seeker</button>
-                            <button onClick={handleSlideClick} className="slideBtn employerSlide">Employer</button>
+                            <button onClick={handleSeekerClick} id="seekerBtn" className="slideBtn seekerSlide">Job Seeker</button>
+                            <button onClick={handleEmployerClick} id="employerBtn" className="slideBtn employerSlide">Employer</button>
                         </div>
                     </div>
 

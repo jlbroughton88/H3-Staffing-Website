@@ -66,12 +66,14 @@ strong {
 
           &:hover {
             cursor: pointer;
-            // @include slideFocus();
           }
 
-          &:focus {
+          &:active {
             @include slideFocus();
           }
+        }
+        .seekerSlide.active{
+          @include slideFocus();
         }
         .employerSlide {
           border-top-right-radius: 5px;
@@ -80,12 +82,14 @@ strong {
 
           &:hover {
             cursor: pointer;
-            // @include slideFocus();
           }
 
-          &:focus {
+          &:active {
             @include slideFocus();
           }
+        }
+        .employerSlide.active{
+          @include slideFocus();
         }
       }
     }

@@ -37,7 +37,7 @@ const Navbar = () => {
                         : user.nickname + "'s picture"
                     }
                   ></img>
-                </Link>                
+                </Link>
                 <div className="navLogOut" onClick={logout}>
                   {" "}
                   Log Out
