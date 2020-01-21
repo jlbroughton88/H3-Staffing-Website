@@ -7,6 +7,7 @@ import Profile from "./components/-----pages/Profile";
 import Jobs from "./components/-----pages/Jobs";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Loading from "./components/Loading1/Loading1";
 import AppRouter from "./components/Router/Router";
 import { Helmet } from "react-helmet";
 
@@ -15,7 +16,7 @@ function App() {
   const { isLoading } = useAuth0();
 
   if (isLoading) {
-    return <div>Loading...</div>
+    return <Loading/>
   }
 
   // function load_js() {

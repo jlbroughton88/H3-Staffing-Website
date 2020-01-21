@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useAuth0 } from "../../contexts/auth-context";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Loading1 from "../Loading1/Loading1";
 import "./Profile1.scss";
 
 const Profile1 = () => {
@@ -21,6 +22,10 @@ const Profile1 = () => {
             .then(response => console.log(response))
             .catch(err => console.log(err));
         console.log(`Name changed to: ${first} ${last}`)
+    }
+
+    if(isLoading) {
+        return <Loading1/>
     }
 
     return (

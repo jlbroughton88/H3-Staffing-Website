@@ -42,7 +42,7 @@ const Navbar = () => {
                   {" "}
                   Log Out
                 </div>
-                {user.email === "jlbroughton88@gmail.com" && (
+                {(user.email === "jlbroughton88@gmail.com" || user.email === "ablue@h3staffing.com" || user.email === "deberry@deberrycompany.com") && (
                   <Link className="blogPostLink" to="/blogpost">
                     <div className="blogPostBtn">Post Blog</div>
                   </Link>

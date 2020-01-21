@@ -7,6 +7,7 @@ import Home4Half from "../Home4Half/Home4Half";
 import Home5 from "../Home5/Home5";
 import Home6 from "../Home6/Home6";
 import LetsTalk1 from "../LetsTalk1/LetsTalk1";
+import Loading from "../Loading1/Loading1";
 import { useAuth0 } from "../../contexts/auth-context";
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
     const { isLoading } = useAuth0();
 
     if(isLoading) {
-        return <div>Loading...</div>
+        return  <Loading/>
     }
 
     return (
