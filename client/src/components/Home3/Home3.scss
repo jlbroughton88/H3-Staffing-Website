@@ -1,4 +1,4 @@
-$blue: #4698FF;
+$green: #6cb144;
 $orange: #ED4F24;
 
 strong{
@@ -23,7 +23,7 @@ strong{
             width: 100%;
             .overviewHead{
                 font-size: 2.5rem;
-                color: $blue;
+                color: $green;
                 margin: 0;
                 margin-bottom: 35px;
             };
@@ -52,7 +52,7 @@ strong{
                 };
                 .briefSect{
                     .briefDiv{
-                        box-shadow: -3px 0px 0px 0px $orange, -6px 0px 0px 0px $blue;
+                        box-shadow: -3px 0px 0px 0px $orange, -6px 0px 0px 0px $green;
                         margin-bottom: 30px;
                         padding-left: 10px;
                         .briefHead{
@@ -73,7 +73,7 @@ strong{
                     height: auto;
                     width: 100%;
                     border-radius: 5px;
-                    box-shadow: 4px 4px $orange, 8px 8px $blue;
+                    box-shadow: 4px 4px $orange, 8px 8px $green;
                     
 
                 };
@@ -133,7 +133,7 @@ strong{
                     display: flex;
                     align-items: center;
                     max-width: inherit;
-                    box-shadow: 4px 4px $orange, 8px 8px $blue;
+                    box-shadow: 4px 4px $orange, 8px 8px $green;
                     border-radius: 5px;
                     margin-bottom: 40px;
 
@@ -229,7 +229,7 @@ strong{
 
            .briefSect2{
                 .briefDiv2{
-                    box-shadow: -3px 0px 0px 0px $orange, -6px 0px 0px 0px $blue;
+                    box-shadow: -3px 0px 0px 0px $orange, -6px 0px 0px 0px $green;
                     margin-bottom: 30px;
                     padding-left: 10px;
                     .briefHead2{

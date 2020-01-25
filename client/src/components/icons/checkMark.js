@@ -13,7 +13,7 @@ const CheckMark = () => {
         strokeWidth:"1px"
     }
     const style3 = {
-        fill:"#4698ff",
+        fill:"#6cb144",
         stroke:"#000",
         strokeWidth:"0.5px"
     }
@@ -43,7 +43,7 @@ const CheckMark = () => {
     }
 
     const style9 = {
-        fill:"#4698ff"
+        fill:"#6cb144"
     }
     return (
         <svg width="55px" height="100%" viewBox="0 0 50 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" space="preserve" serif="http://www.serif.com/" style={style8}>

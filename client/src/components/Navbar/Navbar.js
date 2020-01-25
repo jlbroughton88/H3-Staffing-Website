@@ -27,26 +27,32 @@ const Navbar = () => {
             )}
             {!isLoading && user && (
               <div className="loggedInSect">
-                <Link className="navPicLink" to="/profile">
-                  <img
-                    className="navPicture"
-                    src={user.picture}
-                    alt={
-                      user.given_name
-                        ? user.given_name
-                        : user.nickname + "'s picture"
-                    }
-                  ></img>
-                </Link>
-                <div className="navLogOut" onClick={logout}>
-                  {" "}
-                  Log Out
+                <div className="navLinkStack">
+                  <div className="navLogOut" onClick={logout}>
+                    {" "}
+                    Log Out
+                  </div>
+
+                  {(user.email === "jlbroughton88@gmail.com" ||
+                    user.email === "ablue@h3staffing.com" ||
+                    user.email === "deberry@deberrycompany.com") && (
+                    <Link to="/blogpost" className="blogPostBtn">
+                      Post Blog
+                    </Link>
+                  )}
                 </div>
-                {(user.email === "jlbroughton88@gmail.com" || user.email === "ablue@h3staffing.com" || user.email === "deberry@deberrycompany.com") && (
-                  <Link className="blogPostLink" to="/blogpost">
-                    <div className="blogPostBtn">Post Blog</div>
+                  <Link className="navPicLink" to="/profile">
+                    <img
+                      className="navPicture"
+                      src={user.picture}
+                      alt={
+                        user.given_name
+                          ? user.given_name
+                          : user.nickname + "'s picture"
+                      }
+                    ></img>
                   </Link>
-                )}
+                
               </div>
             )}
           </div>

@@ -14,7 +14,7 @@ const quotes = () => {
     const style2 = {
         fontFamily:'CorsivaHebrew',
         fontSize:"136.383px",
-        fill:"#4698ff"
+        fill:"#6cb144"
     }
 
     return (

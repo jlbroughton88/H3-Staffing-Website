@@ -1,4 +1,4 @@
-$blue: #4698FF;
+$green: #6cb144;
 $orange: #ED4F24;
 
 .allMother{
@@ -17,7 +17,7 @@ $orange: #ED4F24;
         color: #ffffff;
         padding: 10px;
         border-radius: 5px;
-        box-shadow: 4px 4px $orange, 8px 8px $blue;
+        box-shadow: 4px 4px $orange, 8px 8px $green;
     }
 
     .postGrid{
@@ -42,10 +42,10 @@ $orange: #ED4F24;
             height: auto;
             border-radius: 5px;
             padding-bottom: 10px;
-            box-shadow: 4px 4px $orange, 8px 8px $blue;
+            box-shadow: 4px 4px $orange, 8px 8px $green;
 
             .blogTitle{
-                background: $blue;
+                background: $green;
                 color: #ffffff;
                 padding: 10px 0;
                 font-size: 1.3rem;
@@ -63,7 +63,7 @@ $orange: #ED4F24;
                 
                 .blogDate{ 
                     &:before{
-                        color: blue;
+                        color: green;
                         content: "\00a0  ||| \00a0";
                     }
                 }

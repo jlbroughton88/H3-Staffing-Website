@@ -1,8 +1,8 @@
-$blue: #4698FF;
+$green: #6cb144;
 $orange: #ED4F24;
 
 .singleHr{
-    border: 1px $blue solid;
+    border: 1px $green solid;
     width: 100%;
     margin-bottom: 25px;
 }
@@ -31,7 +31,7 @@ $orange: #ED4F24;
                 color: #ffffff;
                 padding: 10px;
                 border-radius: 5px;
-                box-shadow: 4px 4px $orange, 8px 8px $blue;
+                box-shadow: 4px 4px $orange, 8px 8px $green;
             }
             .singleText{
                 margin-bottom: 10-px;
@@ -42,12 +42,12 @@ $orange: #ED4F24;
                 display: flex;
                 flex-direction: row;
                 align-self: flex-end;
-                background: lightblue;
+                background: lightgreen;
                 padding: 15px;
                 border-radius: 5px;
                 .singleDate{               
                     &:before{
-                        color: $blue;
+                        color: $green;
                         content: "\00a0  ||| \00a0";
                     }}
                 .singleTime{} 

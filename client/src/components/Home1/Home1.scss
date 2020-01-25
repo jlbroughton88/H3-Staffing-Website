@@ -1,5 +1,31 @@
 .home1Mother{
-  height: calc(100vh - 204px);
+  height: calc(100vh - 90px);
+
+  // .noticeDiv{
+  //   background: yellow;
+  //   padding: 10px;
+  //   .noticeH1{
+  //     font-size: 1.5rem;
+  //     text-align: center;
+  //     &:before{
+  //       content: 'Notice';
+  //       background: black;
+  //       color: white;
+  //       border-radius: 3px;
+  //       padding: 2px 5px;
+  //     }
+  //   }
+  //   @media(max-width: 830px) {
+  //     .noticeH1{
+  //       font-size: 1.2rem;
+  //     }
+  //   }
+  //   @media(max-width: 550px) {
+  //     .noticeH1{
+  //       font-size: 1.0rem;
+  //     }
+  //   }
+  // }
 
   .home1Main{
     height: 100%;
@@ -53,7 +79,7 @@
         border: none;
         background: #ED4F24;
         border-radius: 5px;
-        box-shadow: 3px 3px rgba(70, 152, 255, 1);
+        box-shadow: 3px 3px #6cb144;
         color: #ffffff;
         font-size: 1.2rem;
         font-weight: 900;

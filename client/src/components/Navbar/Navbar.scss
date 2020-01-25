@@ -50,58 +50,52 @@
         .loggedInSect {
           text-align: center;
           display: flex;
-          align-items: flex-end;
+          align-items: center;
           justify-content: center;
-          flex-direction: column;
+          flex-direction: row;
 
-          .blogPostLink {
-            height: 25px;
-            .blogPostBtn {
-              height: 25px;
-              color: #333;
-              padding: 1px 10px;
-              border-radius: 5px;
-              font-size: 0.85rem;
-              font-weight: 500;
-              background: #ffffff;
-              border: 1px solid #333;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
+          .navLinkStack{
+            display: flex;
+            flex-direction: column;
           }
-
-          .navGreeting {
-            margin: 0;
-            margin-bottom: 10px;
-          }
-
-          a {
-            height: 60px;
-            margin-bottom: 5px;
-            .navPicture {
-              height: auto;
-              width: 60px;
-              //   border: #fff 2px solid;
-              border-radius: 5px;
-              align-self: center;
-            }
-          }
-
           .navLogOut {
             height: 25px;
             color: #333;
-            padding: 1px 10px;
-            border-radius: 5px;
+            padding: 1px 5px;
+            // border-radius: 5px;
             font-size: 0.85rem;
             font-weight: 500;
             background: #ffffff;
-            border: 1px solid #333;
+            border-bottom: 1px solid #333;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 5px;
             cursor: pointer;
+          }
+
+          .blogPostBtn {
+            height: 25px;
+            color: #333;
+            padding: 1px 5px;
+            // border-radius: 5px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            background: #ffffff;
+            border-top: 1px solid #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .navPicLink {
+            height: 60px;
+            margin-left: 10px;
+            .navPicture {
+              height: auto;
+              width: 60px;
+              border-radius: 5px;
+              align-self: center;
+            }
           }
         }
       }
@@ -129,15 +123,15 @@
                 font-size: 0.75rem;
               }
             }
-            .navPicLink{
-                height: 45px;
+            .navPicLink {
+              height: 45px;
               .navPicture {
                 width: 45px;
               }
             }
-            .navLogOut{
-                height: 20px;
-                font-size: 0.75rem;
+            .navLogOut {
+              height: 20px;
+              font-size: 0.75rem;
             }
           }
         }
