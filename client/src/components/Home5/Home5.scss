@@ -2,10 +2,8 @@ $green: #6cb144;
 $orange: #ED4F24;
 
 .home5Mother{
-    // margin-top: 100px;
     height: 80%;
     .home5Main{
-        // margin-bottom: 60px;
         .home5HeadDiv{
             width: 100%;
             margin-bottom: 35px;
@@ -69,7 +67,7 @@ $orange: #ED4F24;
                     to{transform: translate(-2000px)}
                 }
                         
-                 animation: scroll 65s alternate infinite;
+                 animation: scroll 65s linear infinite;
             }
 
         }

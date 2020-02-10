@@ -1,12 +1,14 @@
 
 .jobs1Mother{
-    height: calc(100vh - 204px);
+    height: calc(100vh - 93px);
     .jobs1Main{
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-image: url('../images/h3Conferance2.jpg');
+        background-size: cover;
 
         .loadJobBoardBtn{
             -webkit-appearance: none;
