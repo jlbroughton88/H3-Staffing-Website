@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "../../contexts/auth-context";
 import "./Navbar.scss";
 
 const Navbar = () => {
   const { isLoading, loginWithRedirect, logout, user } = useAuth0();
+  let authorized;
+  useEffect(() => {
+    if(user) {
+          if (user.email === "jlbroughton88@gmail.com" || user.email === "ablue@h3staffing.com" || user.email === "deberry@deberrycompany.com") {
+      authorized = true;
+    } else {
+      let navLogOut = document.getElementById("navLogOut");
+      navLogOut.style.borderBottom = "2px solid #333";
+    }
+    }
+
+  }, [user])
+
 
   return (
     <nav className="navMother">
@@ -28,7 +41,7 @@ const Navbar = () => {
             {!isLoading && user && (
               <div className="loggedInSect">
                 <div className="navLinkStack">
-                  <div className="navLogOut" onClick={logout}>
+                  <div className="navLogOut" id="navLogOut" onClick={logout}>
                     {" "}
                     Log Out
                   </div>

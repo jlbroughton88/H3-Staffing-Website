@@ -71,8 +71,12 @@ $orange: #ED4F24;
     }
 
     @media(max-width: 600px) {
+        height: 100%;
+        margin-top: 0;
         .singleMain{
+            // margin-top: 90px;
             .singlePostContainer{
+                margin-top: 140px;
                 .singleTitle{
                     font-size: 1.5rem;
                 }

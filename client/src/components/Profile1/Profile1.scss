@@ -1,33 +1,44 @@
-.profile1Mother{
-    .profile1Main{
-        height: calc(100vh - 204px);
+.profile1Mother {
+  .profile1Main {
+    height: calc(100vh - 204px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .profileName {
+    }
+    .formParent {
+    border: 2px solid #333;
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 25px;
+    max-width: 500px;
+      form {
         display: flex;
-        align-items: center;
         justify-content: center;
         flex-direction: column;
 
-        .profileName{
-            
+        .nameInputs {
+          border: none;
+          border: #333 solid 1px;
+          padding: 5px 10px;
+          border-radius: 3px;
+          margin: 10px;
+          font-size: 1rem;
         }
 
-        form{
-            .nameInputs{
-                border: none;
-                border: #333 solid 1px;
-                padding: 5px 10px;
-                border-radius: 5px;
-                margin: 10px;
-                font-size: 1rem;
-            }
-
-            .nameSubmit{
-                border: none;
-                border: #333 solid 1px;
-                padding: 5px 10px;
-                border-radius: 5px;
-                margin: 10px;
-                font-size: 1rem;
-            }
+        .nameSubmit {
+          border: none;
+          border: #333 solid 1px;
+          padding: 5px 10px;
+          border-radius: 3px;
+          margin: 10px;
+          font-size: 1rem;
+          appearance: none;
+          width: 100px;
         }
+      }
     }
+  }
 }

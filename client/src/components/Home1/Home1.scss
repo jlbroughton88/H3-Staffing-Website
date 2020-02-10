@@ -36,7 +36,7 @@
     background: #ffffff;
     background-image: url('../images/h3Conferance.jpg');
     background-size: cover;
-    margin-top: 30px;
+    margin-top: 15px;
     .home1HeadDiv{
       padding: 0 40px;
       margin-bottom: 30px;
@@ -118,11 +118,25 @@
   }
 
   @media(max-width: 600px) {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 93px);
+    .home1Main{
+      margin-top: 0;
+      .home1HeadDiv{
+        .home1Head{
+          font-size: 1.6rem;
+        }
+      }
+      .downArrow{
+        top: 90%;
+      }
+    }
+  }
+
+  @media(max-width: 400px) {
     .home1Main{
       .home1HeadDiv{
         .home1Head{
-          font-size: 1.8rem;
+          font-size: 1.35rem;
         }
       }
       .downArrow{
