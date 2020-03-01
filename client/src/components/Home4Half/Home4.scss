@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, p{
             padding: 0 50px;
             margin-bottom: 25px;
             .home4Head{
-                font-size: 2.5rem;
+                font-size: 2.4rem;
                 color: #6cb144;
             };
         }
@@ -34,13 +34,13 @@ h1, h2, h3, h4, h5, p{
                     .serviceHead{
                         margin: 0;
                         margin-bottom: 10px;
-                        font-size: 1.5rem;
+                        font-size: 1.3rem;
                     };
                     .servicePara{
-                        font-size: 1.25rem;
+                        font-size: 1.15rem;
 
                         @media(max-width: 800px) {
-                            font-size: 1.3rem;
+                            font-size: 1.15rem;
                         }
                     };
                 }
@@ -76,19 +76,7 @@ h1, h2, h3, h4, h5, p{
             .home4HeadDiv{
                 padding: 0 25px;
                 .home4Head{
-                   font-size: 2.2rem; 
-                }
-            }
-            .servicesGridDiv{
-                .servicesGrid{
-                    .serviceDiv{
-                        .serviceHead{
-                            font-size: 1.4rem;
-                        }
-                        .servicePara{
-                            font-size: 1.1rem;
-                        }
-                    }
+                   font-size: 2.1rem; 
                 }
             }
         }

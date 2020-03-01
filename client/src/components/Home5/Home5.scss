@@ -6,12 +6,12 @@ $orange: #ED4F24;
     .home5Main{
         .home5HeadDiv{
             width: 100%;
-            margin-bottom: 35px;
+            margin-bottom: 20px;
 
             .home5Head{
                 color: $green;
                 text-align: center;
-                font-size: 2.5rem;
+                font-size: 2.4rem;
             }
         }
         .scrollingDiv{
@@ -35,7 +35,7 @@ $orange: #ED4F24;
                     z-index: 1;
 
                         .testimonialPara{
-                            font-size: 1.3rem;
+                            font-size: 1.15rem;
                         }                 
                     }            
 
@@ -57,7 +57,8 @@ $orange: #ED4F24;
 
                     .testimonialRole{
                         text-align: center;
-                        font-size: 1.45rem;
+                        font-size: 1.3rem;
+
                         font-family:"Open Sans Semibold";
                     }
                 }                    
@@ -78,7 +79,7 @@ $orange: #ED4F24;
             margin-bottom:  40px;
             .home5HeadDiv{
                 .home5Head{
-                    font-size: 2.2rem;
+                    font-size: 2.1rem;
                 }
             }
 
@@ -87,7 +88,7 @@ $orange: #ED4F24;
                     .testimonialBox{
                         width: 350px;
                         .testimonialPara{
-                            font-size: 1.1rem;
+                            font-size: 1.15rem;
                         }
                     }
                     .testimonialRoleDiv{

@@ -54,7 +54,7 @@ const Navbar = () => {
                     </Link>
                   )}
                 </div>
-                  <Link className="navPicLink" to="/profile">
+                  {/* <Link className="navPicLink" to="/profile">
                     <img
                       className="navPicture"
                       src={user.picture}
@@ -64,7 +64,7 @@ const Navbar = () => {
                           : user.nickname + "'s picture"
                       }
                     ></img>
-                  </Link>
+                  </Link> */}
                 
               </div>
             )}

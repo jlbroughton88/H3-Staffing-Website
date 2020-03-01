@@ -22,10 +22,10 @@ strong{
             align-self: center;
             width: 100%;
             .overviewHead{
-                font-size: 2.5rem;
+                font-size: 2.4rem;
                 color: $green;
                 margin: 0;
-                margin-bottom: 35px;
+                margin-bottom: 20px;
             };
         }
 
@@ -46,7 +46,7 @@ strong{
                     margin: none;
                     
                     .overviewPara{
-                        font-size: 1.25rem;
+                        font-size: 1.15rem;
                         margin: none;
                     };
                 };
@@ -57,11 +57,11 @@ strong{
                         padding-left: 10px;
                         .briefHead{
                             margin: 0;
-                            font-size: 1.4rem;
+                            font-size: 1.3rem;
                         };
                         .briefPara{
                             margin: 0;
-                            font-size: 1.25rem;
+                            font-size: 1.15rem;
                         };
                     };
                 };
@@ -115,7 +115,7 @@ strong{
                                 font-size: 1.3rem;
                             }
                             .briefPara{
-                                font-size: 1.1rem;
+                                font-size: 1.15rem;
                             };
                         }
                     }
@@ -172,13 +172,10 @@ strong{
 
             @media(max-width: 550px) {
                 .overviewSect{
-                    .overviewHead{
-                        font-size: 2.4rem;
-                    }
                     .overviewImgSect2{
                         .overviewParaDiv2{
                             .overviewPara2{
-                                font-size: 1.25rem;
+                                font-size: 1.15rem;
                             }
                         }
                     }
@@ -189,7 +186,7 @@ strong{
                                 font-size: 1.15rem;
                             };
                             .briefPara{
-                                font-size: 1rem;
+                                font-size: 1.15rem;
                             };
                         }
                     }
@@ -234,11 +231,11 @@ strong{
                     padding-left: 10px;
                     .briefHead2{
                         margin: 0;
-                        font-size: 1.4rem;
+                        font-size: 1.3rem;
                     };
                     .briefPara2{
                         margin: 0;
-                        font-size: 1.25rem;
+                        font-size: 1.15rem;
                     };
                 };
             };
@@ -260,7 +257,7 @@ strong{
 
             .overviewHeadDiv{
                 .overviewHead{
-                    font-size: 2.2rem;
+                    font-size: 2.1rem;
                 }
             }
             .overviewSectParent{
@@ -268,7 +265,7 @@ strong{
                     .overviewImgSect2{
                         .overviewParaDiv2{
                             .overviewPara2{
-                                font-size: 1rem;
+                                font-size: 1.15rem;
                             }
                         }
                     }
@@ -278,10 +275,10 @@ strong{
             .briefSect2{
                 .briefDiv2{
                     .briefHead2{
-                        font-size: 1.25rem;
+                        font-size: 1.3rem;
                     }
                     .briefPara2{
-                        font-size: 1.1rem;
+                        font-size: 1.15rem;
                     }
                 }
             }

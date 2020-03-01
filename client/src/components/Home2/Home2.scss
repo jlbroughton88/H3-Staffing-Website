@@ -21,7 +21,7 @@ strong {
       max-width: 1000px;
       align-self: center;
       text-align: center;
-      margin-bottom: 35px;
+      margin-bottom: 20px;
       .discoverHead {
         color: $green;
         font-size: 3rem;
@@ -39,7 +39,7 @@ strong {
       outline: none;
       width: 120px;
       border: 2px solid lightgrey;
-      font-size: 1rem;
+      font-size: 1.15rem;
       transition: all 0.2s ease-in-out;
     }
     @mixin slideFocus {
@@ -47,13 +47,13 @@ strong {
       outline: none;
       border: 2px #6cb144 solid;
       color: #4b792e;
-      font-size: 0.95rem;
+      font-size: 1.15rem;
     }
 
     .seekerEmployeeDiv {
       display: flex;
       justify-content: center;
-      margin-bottom: 35px;
+      margin-bottom: 20px;
 
       .seekerEmployerSlider {
         border-radius: 5px;
@@ -105,7 +105,7 @@ strong {
       padding-left: 50px;
       padding-right: 50px;
       width: calc(100% - 100px);
-      margin-bottom: 35px;
+      margin-bottom: 20px;
 
       .checkListParent {
         .checkList {
@@ -139,8 +139,8 @@ strong {
             .checkListPara {
               margin: 0;
               width: auto;
-              font-size: 1.25rem;
-              align-self: center;
+              font-size: 1.15rem;
+              align-self: flex-start;
               max-width: 320px;
               margin-left: 10px;
             }
@@ -188,6 +188,7 @@ strong {
               padding: 10px 15px;
               border-radius: 5px;
               box-shadow: 2px 2px $orange, 4px 4px $green;
+              font-size: 1.15rem;
             }
           }
         }
@@ -196,7 +197,7 @@ strong {
           width: 80%;
           padding-right: 8%;
           .valuesPara {
-            font-size: 1.4rem;
+            font-size: 1.15rem;
           }
         }
       }
@@ -257,7 +258,7 @@ strong {
         .valuesContent {
           .valuesParaDiv {
             .valuesPara {
-              font-size: 1.25rem;
+              font-size: 1.15rem;
             }
           }
           .valuesListDiv {
@@ -293,7 +294,7 @@ strong {
                 }
 
                 .checkListPara {
-                  font-size: 1.2rem;
+                  font-size: 1.15rem;
                   padding-left: 20px;
                 }
               }
@@ -305,7 +306,7 @@ strong {
       .coreValuesParent {
         .valuesHeadDiv {
           .valuesHead {
-            font-size: 2.5rem;
+            font-size: 2.4rem;
           }
         }
         .valuesContent {
@@ -316,7 +317,7 @@ strong {
             grid-row: 2;
             width: auto;
             .valuesPara {
-              font-size: 1.1rem;
+              font-size: 1.15rem;
             }
           }
           .valuesListDiv {
@@ -381,8 +382,6 @@ strong {
           .valuesParaDiv {
               padding-right: 0;
             padding-left: 2.5%;
-            .valuesPara {
-            }
           }
         }
       }
