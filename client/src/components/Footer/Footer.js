@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "../../contexts/auth-context";
+// import LinkedinFooter from "../icons/linkedinFooter";
+import InstagramFooter from "../icons/instagramFooter";
+import FacebookFooter from "../icons/facebookFooter"
 import "./Footer.scss";
 
 const Footer = () => {
@@ -32,11 +35,17 @@ const Footer = () => {
               <a href="mailto:h3staffing@gmail.com?Subject=Website%20Inquiry">
                 <p className="connectPara">h3staffing@gmail.com</p>
               </a>
-              <div className="socialsArea">
-                <p>O</p>
-                <p>O</p>
-                <p>O</p>
-              </div>
+              <section className="socialsDivFooter">
+                   {/* <a href="https://www.linkedin.com/in/jacob-broughton-637189164/" className="linkedInDivFooter">
+                        <LinkedinFooter/>
+                    </a> */}
+                    <a href="#" className="facebookDivFooter">
+                        <FacebookFooter/>
+                    </a>
+                    <a href="#" className="instagramDivFooter">
+                        <InstagramFooter/>
+                    </a>
+                </section>
             </div>
           </div>
 

@@ -7,7 +7,9 @@ hr{
     margin-top: 50px;
 }
 
+
 .footerMother{
+
     .footerMain{
         .footerBar{
             background: #333;
@@ -69,10 +71,30 @@ hr{
                         font-size: 1.15rem;
                     }
 
-                    .socialsArea{
-                        display: flex;
-                        flex-direction: row;
-                        color: #ffffff;
+                        .socialsDivFooter{
+                            display: flex;
+                            align-items: center;
+                            align-self: center;
+                            // justify-content: space-evenly;
+                            height: 50px;
+                            width: 150px;
+                            background: #333;
+            
+                            .facebookDivFooter, .instagramDivFooter{
+                                align-items: center;
+                                text-align: center;
+                                justify-content: center;
+                                text-align: start;
+                                height: 50px;
+                                width: 50px;
+                                transition: all ease-in-out .3s;
+                                fill: #ffffff;
+            
+                                &:hover{
+                                    fill: #f4c400;
+                                    cursor: pointer;
+                                }
+                        }
                     }
                 }
     
